@@ -1,0 +1,82 @@
+[
+  {
+    "categorie": "HTML",
+    "Question": "HTML is used to structure a web page.",
+    "answer": "True"
+  },
+  {
+    "categorie": "HTML",
+    "Question": "The <img> tag is used to add video.",
+    "answer": "False"
+  },
+  {
+    "categorie": "HTML",
+    "Question": "Every HTML page must start with <!DOCTYPE html>.",
+    "answer": "True"
+  },
+
+  {
+    "categorie": "HTML",
+    "Question": "The <p> tag is used for paragraphs.",
+    "answer": "False"
+  },
+  {
+    "categorie": "HTML",
+    "Question": "<div> is used to add CSS styles directly.",
+    "answer": "False"
+  },
+  {
+    "categorie": "CSS",
+    "Question": "CSS controls the style and layout of a webpage.",
+    "answer": "True"
+  },
+
+  {
+    "categorie": "CSS",
+    "Question": "color: changes the background color.",
+    "answer": "False"
+  },
+
+  {
+    "categorie": "CSS",
+    "Question": "margin adds space inside an element.",
+    "answer": "False"
+  },
+
+  {
+    "categorie": "CSS",
+    "Question": "padding adds space inside the element.",
+    "answer": "True"
+  },
+
+  {
+    "categorie": "CSS",
+    "Question": "display: flex; is used to create flexible layouts.",
+    "answer": "True"
+  },
+  {
+    "categorie": "JavaScript",
+    "Question": "JavaScript makes web pages interactive.",
+    "answer": "True"
+  },
+  {
+    "categorie": "JavaScript",
+    "Question": "console.log() is used to show messages in the console.",
+    "answer": "True"
+  },
+  {
+    "categorie": "JavaScript",
+    "Question": "JavaScript can run without a browser.",
+    "answer": "True"
+  },
+  {
+    "categorie": "JavaScript",
+    "Question": "Variables are created using let, const, or var.",
+    "answer": "True"
+  },
+  {
+    "categorie": "JavaScript",
+    "Question": "JavaScript is the same as Java.",
+    "answer": "False"
+  }
+]
