@@ -6,7 +6,11 @@ const question = document.getElementById("questiontext");
 const border = document.getElementById("border")
 const truebtn = document.getElementById("truebtn");
 const falsebtn = document.getElementById("falsebtn");
-
+let score = 0;
+const high = document.getElementById("high-score");
+const result = document.getElementById("score");
+let highscore = parseInt(localStorage.getItem("high")) || 0;
+high.textContent = "The highest score is : " + highscore;
 async function getquestions(){
     const res = await fetch('quiz.json');
     data = await res.json();
@@ -27,6 +31,7 @@ falsebtn.onclick =() =>btn("False")
 function btn(selected){
     const answer = data[questionnumb].answer;
     if (selected === answer){
+        score ++;
         border.style.backgroundColor = "green";
         truebtn.style.display = "none";
         falsebtn.style.display = "none";
@@ -43,6 +48,12 @@ function nextup(){
     
     if (questionnumb >= data.length) {
         question.textContent = "Finished!";
+        result.textContent = "your score is : " + score;
+        if (highscore < score){
+            highscore = score;
+            localStorage.setItem("high" , highscore);
+        }
+        high.textContent = "The highest score is : " + highscore;
         return;
     }
     
@@ -50,6 +61,9 @@ function nextup(){
 }
 
 getquestions();
+ function restart(){
+    window.location.reload();
 
+ }
 
 
