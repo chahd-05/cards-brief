@@ -25,37 +25,20 @@
     </header>  
     
     <section class=" flex justify-center w-full">
-        <div class="bg-gray-400 flex flex-col justify-between h-100 w-200 py-5 px-10 rounded-2xl klk ">
-        <div class="text-center bg-gray-500 rounded-2xl uu">
-            <h3>Text</h3>
+        <div class="bg-amber-400 flex flex-col justify-between h-100 w-200 py-5 px-10 rounded-2xl klk ">
+        <div id="border" class="text-center bg-purple-600 rounded-2xl uu">
+            <h3 id="questiontext">Text</h3>
         </div>
         <div class="flex flex-col space-y-4 hh">
-            <button class="bg-gray-500 rounded-2xl cc">True</button>
-            <button class="bg-gray-500 rounded-2xl cc">False</button>
+            <button id="truebtn" class="bg-fuchsia-800 rounded-2xl cc">True</button>
+            <button id="falsebtn" class="bg-fuchsia-800  rounded-2xl cc">False</button>
         </div>
         </div>
     </section>
     <div class="flex justify-center">
-     <button class="bg-gray-500 rounded-2xl px-4 py-2 cursor-pointer jj">Next <span>👉</span></button>
+     <button onclick="nextup()" id="nextbtn" class="bg-amber-400  rounded-2xl px-4 py-2 cursor-pointer jj" >Next <span>👉</span></button>
      </div>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <footer class="bg-[#ce8ee44d] text-sm py-4 flex flex-col sm:flex-row justify-between items-center px-6 gap-2">
         <div class="flex items-center gap-2">
             <span>💡</span>
@@ -65,7 +48,7 @@
         <p class="text-gray-300 font-semibold">Tel : +212 707231103</p>
         <p class="text-gray-300">©2025 CARDS. All rights reserved</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,8 @@
 }
 .jj {
     cursor: pointer;
+    font-weight: bold;
+    color: purple;
 }
 
 .uu {
