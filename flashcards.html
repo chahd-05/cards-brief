@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>flashcards</title>
     <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="flashcards.css">
 </head>
 
 <body class="flex flex-col justify-between bg-linear-to-b bg-violet-950 to-[#0a001a] text-white font-sans">
@@ -21,48 +22,26 @@
         </nav>
     </header>
 
-    <section class="flex flex-col top-0">
-        <h2 class="m-5 font-bold italic text-3xl text-center">flashcards</h2>
+ 
+   <div class="input">
+     
+     <select id="input">
+        <option value="All">All</option>
+     </select>
 
-        <div class="grid grid-cols-3 grid-rows-2 
-        ++++++gap-4 gap-y-8 px-10 mt-10 ">
-            <div class="relative">
-                <div class="absolute bottom-2 right-2 w-full h-32 bg-gray-700 rounded"></div>
-                <div class="relative bg-[#D9D9D9] rounded w-full h-32 flex justify-center items-center text-black ">
-                    Text
-                </div>
-            </div>
+   </div>
+<div class="in">
+    <form>
+    <input id="title" placeholder="Title" type="text">
+    <input id="question" placeholder="Quetion" type="text">
+    <input id="answer" placeholder="Answer" type="text">
+    </form>
+    </div>
+<div class="add">
+   <button id="button">+Add card</button>
+</div> 
 
-            <div class="relative">
-                <div class="absolute bottom-2 right-2 w-full h-32 bg-gray-700 rounded"></div>
-                <div class="relative bg-[#D9D9D9] rounded w-full h-32 flex justify-center items-center text-black">
-                    Text
-                </div>
-            </div>
-
-            <div class="relative">
-                <div class="absolute bottom-2 right-2 w-full h-32 bg-gray-700 rounded"></div>
-                <div class="relative bg-[#D9D9D9] rounded w-full h-32 flex justify-center items-center text-black">
-                    Text
-                </div>
-            </div>
-
-            <div class="relative">
-                <div class="absolute bottom-2 right-2 w-full h-32 bg-gray-700 rounded"></div>
-                <div class="relative bg-[#D9D9D9] rounded w-full h-32 flex justify-center items-center text-black">
-                    Text
-                </div>
-            </div>
-
-            <div class="relative">
-                <div class="absolute bottom-2 right-2 w-full h-32 bg-gray-700 rounded"></div>
-                <div class="relative bg-[#D9D9D9] rounded w-full h-32 flex justify-center items-center text-black">
-                    +add card
-                </div>
-            </div>
-        </div>
-
-    </section>
+<div id="cards"></div>
 
     <footer class="bg-[#ce8ee44d] text-sm py-4 flex flex-col sm:flex-row justify-between items-center px-6 gap-2 mt-52">
         <div class="flex items-center gap-2">
@@ -73,6 +52,9 @@
         <p class="text-gray-300 font-semibold">Tel : +212 707231103</p>
         <p class="text-gray-300">©2025 CARDS. All rights reserved</p>
     </footer>
+    <script src="flash.js">
+        
+    </script>
 </body>
 
 </html>
