@@ -23,4 +23,11 @@
     background-color: white;
    box-shadow: 0px 5px rgba(0, 0, 0, 0.407);
 }
+.h-title {
+    text-align: center;
+    font-family: monospace;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(248, 170, 16);
+}
 
