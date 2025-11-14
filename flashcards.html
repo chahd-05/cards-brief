@@ -23,25 +23,33 @@
     </header>
 
  
-   <div class="input">
-     
-     <select id="input">
-        <option value="All">All</option>
-     </select>
-
-   </div>
+  
 <div class="in">
     <form>
-    <input id="title" placeholder="Title" type="text">
+    <input class="title-mar" id="title" placeholder="Title" type="text">
+     <div class="input">
+     <select id="input">
+        <option value="all" selected>All</option>
+     </select>
+   </div>
     <input id="question" placeholder="Quetion" type="text">
     <input id="answer" placeholder="Answer" type="text">
     </form>
     </div>
-<div class="add">
+    <div class="btncontainer">
+  <div class="add">
+   <button id="filterbtn">+Add category</button>
    <button id="button">+Add card</button>
 </div> 
+</div>
 
-<div id="cards"></div>
+<div id="cards">
+    <div class="filt">
+     <select id="filter">
+        <option value="all" selected>All</option>
+     </select>
+     </div>
+    </div>
 
     <footer class="bg-[#ce8ee44d] text-sm py-4 flex flex-col sm:flex-row justify-between items-center px-6 gap-2 mt-52">
         <div class="flex items-center gap-2">
