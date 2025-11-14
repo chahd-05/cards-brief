@@ -17,7 +17,7 @@ addcardbtn.addEventListener("click", () => {
   const  str = input.value;
 
   if (question === "" || answer === "") {
-    alert("3amar l input");
+    alert("fill out the question and the answer input");
     return;
   }
 
@@ -85,17 +85,7 @@ filterbtn.addEventListener("click", () => {
     alert("type the title");
     return;
   }
-  let repeat = false;
-  for (let i = 0; filter.options.lenght; i++) {
-    if (newcategory === filter.options[i].lenght) {
-      repeat = true;
-      break;
-    }
-  }
-  if (repeat) {
-    alert("déja vu");
-    return;
-  }
+ 
   const option = document.createElement("option");
   option.value = newcategory;
   option.textContent = newcategory;
