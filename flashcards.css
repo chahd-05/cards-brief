@@ -6,6 +6,9 @@ input{
     border: 3px solid violet;
     width: 300px;
 }
+.title-mar {
+    margin-top: 50px;
+}
 
 .in {
     display: flex;
@@ -15,7 +18,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 120px ;
+    margin-bottom: 70px ;
 }
 
 button {
@@ -31,6 +34,8 @@ button {
 .add {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #cards {
@@ -39,12 +44,10 @@ button {
     flex-wrap: wrap;
     background-color: rgb(102, 41, 162);
     border: 1px solid violet;
-    height: 400px;
     gap: 30px;
     margin: 50px;
     padding: 50px;
     border-radius: 50px;
-    
 }
 .flashcard {
    height: 150px;
@@ -62,7 +65,7 @@ button {
 }
 .front, .back {
     position: absolute;
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
@@ -94,5 +97,15 @@ select {
     border-radius: 50px;
     height: 40px;
     padding: 0px 10px;
-    margin: 50px;
+    margin: 10px;
+}
+.filt{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btncontainer{
+    display: flex;
+    justify-content: center;
 }
